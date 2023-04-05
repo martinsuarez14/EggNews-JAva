@@ -1,0 +1,81 @@
+<footer class="container">
+    <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">&copy; 2023 Egg News</p>
+
+        <a href="/"
+            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap" />
+            </svg>
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a th:href="@{/inicio}" class="nav-link px-2 text-muted">Muro Principal</a>
+            </li>
+            <li class="nav-item"><a type="button" class="nav-link px-2 text-muted" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Contacto
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Ponte en Contacto</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2 class="fs-5">Vía WhatsApp</h2>
+                                <p>XXX - XXXXXXX</p>
+                                <hr>
+                                <h2 class="fs-5">Vía Mail</h2>
+                                <p><a href="">eggnews@gmail.com</a>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item"><a type="button" class="nav-link px-2 text-muted" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal2">
+                    Sobre Nosotros
+                </a>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Sobre Nosotros</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <!-- Scrollable modal -->
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <p class="mx-1">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque magnam excepturi,
+                                    corporis quos a, minus optio voluptates aut qui laudantium praesentium dolore est
+                                    consequatur nesciunt at voluptatem neque in consequuntur.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolorum magni cum
+                                    numquam
+                                    maxime laboriosam, veritatis explicabo. Doloribus sit hic ex? Quae incidunt animi
+                                    alias
+                                    nobis ullam similique nostrum tenetur!
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</footer>
