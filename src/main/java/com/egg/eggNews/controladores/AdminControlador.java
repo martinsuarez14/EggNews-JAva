@@ -39,15 +39,15 @@ public class AdminControlador {
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     @GetMapping("/dashboard")
     public String panelAdministrativo(ModelMap modelo) {
-//        List<Noticia> noticias = noticiaServicio.listarNoticias();
-//        
-//        Noticia not1 = noticias.get(0);
-//        Noticia not2 = noticias.get(1);
-//        Noticia not3 = noticias.get(2);
-//        
-//        modelo.addAttribute("not1", not1);
-//        modelo.addAttribute("not2", not2);
-//        modelo.addAttribute("not3", not3);
+        List<Noticia> noticias = noticiaServicio.listarNoticias();
+        
+        Noticia not1 = noticias.get(0);
+        Noticia not2 = noticias.get(1);
+        Noticia not3 = noticias.get(2);
+        
+        modelo.addAttribute("not1", not1);
+        modelo.addAttribute("not2", not2);
+        modelo.addAttribute("not3", not3);
         return "panel.html";
     }
     

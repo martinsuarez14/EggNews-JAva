@@ -55,7 +55,7 @@ public class NoticiaControlador {
         try {
             noticiaServicio.guardarNoticia(titulo, cuerpo, idPeriodista, archivo);
             modelo.put("exito", "Se guardó la noticia correctamente.");
-            return "redirect:../../inicio";
+            return "redirect:../lista";
         } catch (MiExcepcion ex) {
             modelo.put("error", ex.getMessage());
             modelo.put("titulo", titulo);
